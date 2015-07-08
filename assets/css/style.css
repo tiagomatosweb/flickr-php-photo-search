@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+/* ----------------------------------------------
+    0. Includes
+    ---------------------------------------------- */
+
+
+
+/* ----------------------------------------------
+    1. Fonts
+    ---------------------------------------------- */
+    /* roboto
+    font-family: 'Roboto', sans-serif; */
+    @import url(http://fonts.googleapis.com/css?family=Roboto:500,900,300,700,400);
+
+
+/* ----------------------------------------------
+    2. Reset
+    ---------------------------------------------- */
+    /* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+    html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+    /* Nicolas Gallagher´s ClearFix - http://nicolasgallagher.com/micro-clearfix-hack/ */
+    .cf:before, .cf:after { content: " "; display: table; }
+    .cf:after { clear: both; }
+
+
+/* ----------------------------------------------
+    3. Global classes
+    ---------------------------------------------- */
+    /*html*/
+        body { font-family: 'Roboto', sans-serif; background: #FFF; font-size: 1em; color: #666; }
+        table td, div { }
+        p { }
+
+    /*link*/
+
+
+    /*titles*/
+        h1, h2, h3, h4, h5, h6 { width: 100%; }
+        h1 { font-size: 1.5em; text-align: center; }
+
+    /*others*/
+        strong { }
+        .container {
+            width: 800px;
+            margin: 0 auto;
+        }
+
+
+/* ----------------------------------------------
+    4. Style third
+    ---------------------------------------------- */
+
+
+/* ----------------------------------------------
+    5. Header
+    ---------------------------------------------- */
+    .header {
+        border-bottom: 1px solid #e7e7e7;
+        background: #f8f8f8;
+        padding: 20px;
+    }
+    .brand {
+        float: left;
+        margin: 3px 0 0;
+    }
+    form {
+        float: right;
+    }
+    .search input[type=text] {
+        width: 300px;
+    }
+
+/* ----------------------------------------------
+    6. Body
+    ---------------------------------------------- */
+    .body {
+        margin: 20px 0 0;
+    }
+    .img-gallery {
+        display: flex;
+        margin: 0 0 0 5px;
+    }
+    .img-gallery .img {
+        display: flex;
+        float: left;
+        width: 110px; height: 110px;
+        margin: 0 15px; padding: 10px;
+        border: 1px solid #EEE;
+        border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px;
+    }
+        .img-gallery .img:first-child {
+            margin-left: 0;
+        }
+        .img-gallery .img:last-child {
+            margin-right: 0;
+        }
+        .img-gallery .img a {
+            display: inline-block;
+            margin: auto;
+        }
+    .paginator {
+        display: block;
+        width: 100%;
+        font-size: 0.875em; text-align: center;
+        margin: 20px 0 0;
+    }
+
+/* ----------------------------------------------
+    7. Pages
+    ---------------------------------------------- */
+
+/* ----------------------------------------------
+    8. Footer
+    ---------------------------------------------- */
+
+/* ----------------------------------------------
+    9. Form
+    ---------------------------------------------- */
+    .form-field {
+        font-family: 'Roboto', sans-serif; font-size: 1em; font-weight: 700; color: #ff0084;
+        -moz-box-sizing: border-box;
+        border: 1px solid #CCCCCC;
+        border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px;
+        box-shadow: 0 1px 3px #DDDDDD inset;
+        padding: 0.7em 0.6em;
+        transition: border 0.3s linear 0s;
+        background: #FFF;
+    }
+   .form-field:focus {
+        border-color: #1c9be9;
+        outline: 0 none;
+        box-shadow: 0 1px 3px #DDDDDD inset !important;
+    }
+    .btn {
+        display: inline-block;
+        font-size: 1em; font-weight: 400; line-height: 1.8em; text-align: center;
+        margin: 0; padding: 6px 12px;
+        cursor: pointer;
+        border: 1px solid transparent;
+        border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px;
+    }
+    .btn-primary {
+        color: #FFF;
+        background: #1c9be9;
+    }
+    ::-webkit-input-placeholder {
+       font-weight: 300; font-style: italic; color: #CCC;
+    }
+    :-moz-placeholder {
+       font-weight: 300; font-style: italic; color: #CCC;
+    }
+    ::-moz-placeholder {
+       font-weight: 300; font-style: italic; color: #CCC;
+    }
+    :-ms-input-placeholder {
+       font-weight: 300; font-style: italic; color: #CCC;
+    }
